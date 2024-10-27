@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrains Mono:size=15:antialias=true:autohint=true";
+static char *font = "JetBrains Mono Nerd Font:size=16:antialias=true:autohint=true";
 static char *font2[] = { "NotoColorEmoji:pixelsize=15:antialias=true:autohint=true", "YujiBoku:size=12" };
 static int borderpx = 0;
 
@@ -118,29 +118,30 @@ float alpha = 0.8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-  "#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
-  "#cc241d",
-  "#98971a",
-  "#d79921",
-  "#458588",
-  "#b16286",
-  "#689d6a",
-  "#a89984",
-  "#928374",
-  "#fb4934",
-  "#b8bb26",
-  "#fabd2f",
-  "#83a598",
-  "#d3869b",
-  "#8ec07c",
-  "#ebdbb2",
+  "#282a36", /* Background */
+  "#ff5555", /* Red */
+  "#50fa7b", /* Green */
+  "#f1fa8c", /* Yellow */
+  "#bd93f9", /* Blue */
+  "#ff79c6", /* Magenta */
+  "#8be9fd", /* Cyan */
+  "#bfbfbf", /* Light Gray */
+  "#4d4d4d", /* Dark Gray */
+  "#ff6e6e", /* Light Red */
+  "#69ff94", /* Light Green */
+  "#ffffa5", /* Light Yellow */
+  "#d6acff", /* Light Blue */
+  "#ff92df", /* Light Magenta */
+  "#a4ffff", /* Light Cyan */
+  "#f8f8f2", /* Foreground */
   [255] = 0,
   /* more colors can be added after 255 to use with DefaultXX */
-  "#add8e6", /* 256 -> cursor */
-  "#555555", /* 257 -> rev cursor*/
-  "#282828", /* 258 -> bg */
-  "#ffffff", /* 259 -> fg */
+  "#50fa7b", /* 256 -> cursor */
+  "#44475a", /* 257 -> reverse cursor */
+  "#282a36", /* 258 -> bg */
+  "#f8f8f2", /* 259 -> fg */
 };
+
 
 
 /*
